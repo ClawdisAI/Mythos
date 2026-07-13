@@ -34,3 +34,4 @@ class MessageBus:
             raise KeyError(f"Agent not registered: {agent_id}")
         return await asyncio.wait_for(q.get(), timeout=timeout)
 
+

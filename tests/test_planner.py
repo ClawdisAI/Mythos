@@ -21,3 +21,4 @@ async def test_ready_tasks_respects_dependencies(planner, memory):
     for t in ready:
         assert t.dependencies == []
 
+
